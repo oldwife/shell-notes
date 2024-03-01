@@ -1,0 +1,220 @@
+#!/bin/sh
+nvim "$0" ; echo "<3" ; exit
+
+today() {
+	#$(fix the "bar")
+	#$(fix clipboard)
+	#$(brightness controls)
+	$(build github notes integration)
+	$(fix the auto deleting of just plain terminals)
+}
+
+projects() {
+	source hyprland
+	source server
+	source music
+	source notes_for_nerds
+	source laptop
+	source nvim
+	source dotfiles
+	source nokia_n900
+	source walkman
+}
+
+future_training() {
+	- asl
+	- self worth
+		source books
+	- hacking
+	- com sci
+		source cs50
+	- java "runelite"
+		- make some chat commands?
+	- network admin
+	- shell scripting
+}
+
+holy_c(){
+	- stake out on my own
+	- try praying/meditation "type" stuff
+	- think about small groups
+}
+
+people(){
+	source holy_c
+	- cron job birthday messages
+	- get more extroverted
+}
+
+l_func_main() {
+	- intentional time
+	- track food likes and loves
+		source l_food
+	- one text/positive thing said to her a day
+		- maybe batch write some of them?
+}
+
+l_food() {
+	- ranking system#
+}
+
+cs50() {
+	- the videos are on youtube
+		- https://www.youtube.com/@cs50
+}
+
+books() {
+	- atomic habits
+		- have credits on audible
+}
+
+foot() {
+	- fix clipboard
+}
+
+hyprland() {
+	#"idea" programatically change window size "for" menus
+	"idea" add a welcome screen 
+	"bug" made workspace-declutter, not great
+	"idea" add a limit to the ammount of windows
+	#"idea" low-power slide-up emacs style menus
+	#	- this could have a toggle using the org-mode dots
+	#	source dotfiles
+	#	- getting it to work was hard, gunna stick to the full screen thing "for" a bit
+	- build a nice stats thing "for" the menus
+	$(fix the "bar")
+		- just added btop to a scratchpad
+		- maybe have it come up auto, with anykey moving away
+#	- dmenu replacement, with
+#		- quick comands
+#		i dont really care about htis
+#			- "do" i need this?
+	#$(- mono FAST menu)
+	- window rules "for" anoying windows
+#	- hyprland-window-switcher
+		- fix the weird glitchy behavior
+		- add a way to mess with all windows
+		"idea" add a filter in fzf_hands "for" already open windows with that buffer
+#		- make it pretty
+#		- fix info not showing up if 0 windows
+	- make the login easier
+#	- add a cursor
+	- mess with the marks
+		- have a chorded activation
+		- have something so that i can remember the bindings
+#	- fix the qutebrowser toggle
+		#- add pass through "bind" "for" ctrl h/j "for" up/down arrow
+		#- dosent work great with multiple qutebrowser windows, but WHO cares
+	$(fix the audo deleting of just plain terminals)
+	$(fix clipboard)
+	- screen sharing
+#	- printscreen
+		- with record
+#		- auto add to clipboard
+#	- brightness controls
+	- bluetooth stuff
+	- "find" a use "for" the screen controls
+#	- shutdown controls
+#it works but its not great
+	#- theme-setter
+	#	- make the first entry the current theme
+	#	- just make it a floating window or something ( why preview? )
+	- autostart a bunch of stuff
+		- notes
+		- browser
+		- maybe a startup page that deletes itself
+	- 'bug' fix trackpad moving cursor
+}
+
+server() {
+	#$(make minecraft server)
+	#	- papermc?
+	#	- debian?
+		- maybe try the multi thing
+	- password manager
+	matrix synapse server
+}
+
+music() {
+	- script to play it, be nice to yourself
+	- finally dig down on mpd or something
+}
+
+personal_wiki() {
+	- start making some notes "for" commands etc
+	- maybe markdown? maybe something fancier
+}
+
+notes_for_nerds() {
+	- make that daily list thing my counsellor talked about
+	$(build github notes integration)
+		source dotfiles
+	- have the thing run tests on itself to check "if" im doing tasks
+	1. pull down
+	2. check "for" new old
+	3. delete the old
+	4. edit file
+	5. another check
+	6. "if" text is different, just merge it or diff it
+}
+
+laptop() {
+	- get it out of quiet mode its "LAME"
+	- maybe turn off the trackpad
+}
+
+nvim() {
+	- make it pretty
+	- learn how it works
+}
+
+dotfiles() {
+	- get github working
+	- add file syncing between all pcs with one EASY "command"
+	- make a "org-mode" setup that dishes out all my configs safely
+		- github integration
+		- maybe make it more readable somehow
+}
+
+bashwal() {
+	"idea" could upgrade it to provide one file with all the themes
+}
+
+goverment() {
+	- ei
+	- student loans
+}
+
+family() {
+	- talk to family
+	source people
+}
+
+nokia_n900() {
+	could use the n900 as a portable note-taker and terminal
+#	- "find" it and 
+	- get it working
+	- make the keyboard good
+	- optimize it hardcore till its fast.. really fast
+		- maybe get some pen-testing stuff on there, whos to say
+}
+
+walkman() {
+#	- "find" it
+		"bug" found parts, maybe the full thing exists
+	- use it
+}
+
+osrs() {
+	source web_shell
+	source garbzo_gert
+}
+
+web_shell() {
+	- uim road to prif
+#	- finish last quest to construction
+}
+
+garbanzo_gert() {
+	- road to barrows
+}
