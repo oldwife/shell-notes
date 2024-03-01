@@ -1,6 +1,5 @@
 #!/bin/sh
 nvim "$0" ; echo "<3" ; exit
-1test
 test
 
 today() {
