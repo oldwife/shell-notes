@@ -1,5 +1,6 @@
 #!/bin/sh
 nvim "$0" ; echo "<3" ; exit
+test
 
 today() {
 	#$(fix the "bar")
