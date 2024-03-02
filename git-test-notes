@@ -2,7 +2,8 @@
 git clone https://github.com/oldwife/shell-notes /tmp/shell-notes
 cd /tmp/shell-notes
 nvim git-test-notes
-cp -i /tmp/shell-notes ~/.local/bin/
+cp -i /tmp/shell-notes/git-test-notes ~/.local/bin/
+#test
 git add .
 git commit --message "$(date)"
 git push -uf origin main
