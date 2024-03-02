@@ -4,7 +4,7 @@ internet="$(ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/nul
 
 get_latest_version(){
 	git clone https://github.com/oldwife/shell-notes /tmp/shell-notes
-	file_path=/tmp/shell-notes/git-test-notes
+	file_path=/tmp/shell-notes/notes
 }
 
 if [[ "$internet" == "online" ]];then
@@ -17,18 +17,18 @@ cat "$0" > ~/.cache/noteslocal.bak
 
 header="$( cat "$file_path" | head -n +44 )" #:<<NOTEBLOCK
 notes="$( cat "$file_path" | tail -n +45 | head -n -1 | gpg -dq )" #-----BEGIN PGP MESSAGE
-echo "$notes" > /tmp/shell-notes.md
-nvim /tmp/shell-notes.md
+echo "$notes" > /tmp/notes.sh
+nvim /tmp/notes.sh
 build_file() {
 	echo "$header"
-	cat /tmp/shell-notes.sh | gpg -ac -o-
+	cat /tmp/notes.sh | gpg -ac -o-
 	echo "NOTEBLOCK"
 }
 build_file > "$file_path"
-rm -rf /tmp/shell-notes.sh
+rm -rf /tmp/notes.sh
 
 upload_notes(){
-	cp -i /tmp/shell-notes/git-test-notes ~/.local/bin/
+	cp -i /tmp/shell-notes/notes ~/.local/bin/
 	cd /tmp/shell-notes
 	git add .
 	git commit --message "$(date)"
