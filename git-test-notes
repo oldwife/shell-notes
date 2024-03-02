@@ -1,0 +1,4 @@
+#!/bin/sh
+git clone https://github.com/oldwife/shell-notes /tmp/shell-notes
+cd /tmp/shell-notes
+nvim git-test-notes
